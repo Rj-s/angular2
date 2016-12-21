@@ -1,10 +1,10 @@
-import { Angular2LearningPage } from './app.po';
+import { Angular2Page } from './app.po';
 
-describe('angular2-learning App', function() {
-  let page: Angular2LearningPage;
+describe('angular2 App', function() {
+  let page: Angular2Page;
 
   beforeEach(() => {
-    page = new Angular2LearningPage();
+    page = new Angular2Page();
   });
 
   it('should display message saying app works', () => {
