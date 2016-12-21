@@ -1,0 +1,27 @@
+<hr>
+<div>
+  <h1>Directive Example </h1>
+  <div *ngIf="switch">NgIf works!!</div>
+  <template [ngIf]="switch">
+<div>
+This template also works!!
+</div>
+</template>
+  <button (click)="onSwitch()"> Click </button>
+</div>
+<hr>
+<div>
+  <h1>Custom Structural Directive Example</h1>
+  <div *unless="customSwitch">
+    <div>
+      <p>This is custom directive works as ngIf !!</p>
+    </div>
+  </div>
+  <template [unless]="customSwitch">
+<div>
+This is custom directive with template works as ngIf!!
+</div>
+</template>
+  <button (click)="onSwitchCustom()"> Click </button>
+</div>
+<hr>
