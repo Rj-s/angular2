@@ -6,12 +6,14 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Link1</a></li>
-        <li><a href="#">Link2</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['home']">Home</a></li>
+        <li><a [routerLink]="['directive-exp']">Directive Examples</a></li>
+        <li><a [routerLink]="['data-sharing']">Data Sharing</a></li>
+        <li><a [routerLink]="['query-param', id.value]">Query Param</a> <input type="text" #id (input)="0" /></li>
+        <ul class="nav navbar-nav navbar-right">
+        </ul>
         <li class="dropdown" appCustomDropdownToggle>
-          <a href="#" class="dropdown-toggle"role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
+          <a class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">User<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Login</a></li>
             <li><a href="#">Logout</a></li>
@@ -25,4 +27,4 @@
   </div>
 </nav>
 
-<app-directive-component></app-directive-component>
+<router-outlet></router-outlet>

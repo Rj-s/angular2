@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectiveComponentComponent implements OnInit {
 
-  private switch = true;
-  private customSwitch = true;
+  private switch = false;
+  private customSwitch = false;
   constructor() { }
 
   ngOnInit() {
